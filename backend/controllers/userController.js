@@ -6,9 +6,25 @@ import User from '../models/userModel.js';
 // @route   POST /api/users/auth
 // @access  Public
 const authUser = asyncHandler(async(req, res) => {
+    const { email, password } = req.body;
+
+    const user = await User.findOne({ email });
+
+    if(user && (await user.matchPassword(password))) {
+        generateToken(res, user._id)
+        res.status(201).json({
+            _id: user._id,
+            name: user.name,
+            email: user.email
+        });
+    } else {
+        res.status(401);
+        throw new Error('Invalid email or password');
+    }
+
     // res.status(401);
     // throw new Error('Something went wrong');
-    res.status(200).json({ message: 'Auth User' });
+    // res.status(200).json({ message: 'Auth User' });
 });
 
 // @desc    Register a new user
@@ -44,7 +60,7 @@ const registerUser = asyncHandler(async(req, res) => {
         throw new Error('Invalid user data');
     }
 
-    res.status(200).json({ message: 'Register User' });
+    // res.status(200).json({ message: 'Register User' });
 });
 
 // @desc    Logout user
