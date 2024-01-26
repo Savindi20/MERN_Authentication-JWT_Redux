@@ -44,6 +44,7 @@ cd frontend
 npm i
 npm i react-bootstrap react-icons 
 npm i bootstrap
+npm i react-router-dom react-router-bootstrap
 cd ..
 ```
 
