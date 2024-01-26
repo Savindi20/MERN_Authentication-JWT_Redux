@@ -36,15 +36,18 @@ npm i -D nodemon
 ### Install Dependencies (frontend)
 
 ```
+npm create vite@latest frontend
+√ Select a framework: » React
+√ Select a variant: » JavaScript
 cd frontend
 npm install
+npm run dev
 ```
 
 ### Install Dependencies (backend)
 
 ```
-cd backend
-npm install
+npm run server
 ```
 
 ### Run
