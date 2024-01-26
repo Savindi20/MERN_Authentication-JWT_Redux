@@ -42,6 +42,8 @@ npm create vite@latest frontend
 √ Select a variant: » JavaScript
 cd frontend
 npm i
+npm i react-bootstrap react-icons 
+npm i bootstrap
 cd ..
 ```
 
