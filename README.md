@@ -31,6 +31,7 @@ JWT_SECRET = 'abc123'
 npm init -y
 npm i express dotenv mongoose bcryptjs jsonwebtoken cookie-parser
 npm i -D nodemon
+npm i -D concurrently
 ```
 
 ### Install Dependencies (frontend)
