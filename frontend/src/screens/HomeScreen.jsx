@@ -1,10 +1,6 @@
-import React from 'react';
+import Hero from "../components/Hero";
 
 const HomeScreen = () => {
-  return (
-    <div>
-      <h1>HomeScreen</h1>
-    </div>
-  );
+  return <Hero />;
 };
 export default HomeScreen;
