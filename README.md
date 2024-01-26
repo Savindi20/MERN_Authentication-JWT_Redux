@@ -25,7 +25,7 @@ MONGO_URI = your mongodb uri
 JWT_SECRET = 'abc123'
 ```
 
-### Install Dependencies
+### Install Dependencies (backend)
 
 ```
 npm init -y
@@ -40,14 +40,8 @@ npm create vite@latest frontend
 √ Select a framework: » React
 √ Select a variant: » JavaScript
 cd frontend
-npm install
-npm run dev
-```
-
-### Install Dependencies (backend)
-
-```
-npm run server
+npm i
+cd ..
 ```
 
 ### Run
