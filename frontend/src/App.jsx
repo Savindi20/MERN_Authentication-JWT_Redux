@@ -6,9 +6,9 @@ const App = () => {
   return (
     <>
       <Header />
-      <Container className='my-2'>
+      {/* <Container className='my-2'>
         <Outlet />
-      </Container>
+      </Container> */}
       <Outlet />
     </>
   )
